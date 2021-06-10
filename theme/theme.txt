@@ -1,6 +1,8 @@
-# Arch-Silence theme for GRUB2
+# Gentoo-Silence theme for GRUB2,
+# Forked from Arch-Silence.
 #
 # Copyright (C) 2015 Filippo Ghibellini
+# Modified by Matteo Salonia (2021)
 
 #general settings
 title-text: ""
@@ -27,18 +29,19 @@ terminal-border: "0"
     highlight_style = "progress_bar/progress_bar_hl_*.png"
 }
 
-# arch logo
+# Gentoo logo
 + image {
-	top = 50%-200
-	left = 50%-75
-    file = "arch_logo.png"
+	top = 50%-300
+	left = 50%-90
+    file = "gentoo_logo.png"
 }
 
 #boot menu
 + boot_menu {
-	left = 50%-150
-	width = 500
-	top = 50%+100
+	left = 50%-200
+	#left = 50%-300
+	width = 550
+	top = 50%
 	height = 300
 
 	item_font = "DejaVu Sans Bold 14"

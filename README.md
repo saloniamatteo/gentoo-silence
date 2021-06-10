@@ -1,9 +1,7 @@
+# Gentoo-Silence GRUB2 theme
 
-# Arch-Silence GRUB2 theme
-
-My flat GRUB2 theme.
-
-<img src="./preview.png" width="400">
+This theme was forked from Arch-Silence.
+Originally made by Filippo Ghibellini, modified by Matteo Salonia.
 
 ## Font
 
@@ -16,6 +14,6 @@ which makes it completely useless since there's practically no font that is read
 
 If not explicitly stated otherwise all the files in this project are distributed under the [GNU General Public License](./COPYING).
 
-## Author
+## Authors
 
-Filippo Ghibellini
+Filippo Ghibellini, Matteo Salonia.
