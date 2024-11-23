@@ -16,6 +16,12 @@ A font size of 12 is also provided, in case you have a smaller display.
 Modify `theme/theme.txt`, and set `terminal-font`, `item_font` and
 `selected_item_font` to `Terminus 12`.
 
+If the font isn't loaded, make sure you also modify `/etc/default/grub`:
+
+```
+GRUB_FONT="/boot/grub/themes/gentoo-silence/terminus32b.pf2"
+```
+
 ## Custom font
 You can also use your own font & font size.
 First, convert your font to grub's format:
