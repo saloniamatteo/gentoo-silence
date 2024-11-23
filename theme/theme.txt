@@ -2,20 +2,22 @@
 # Forked from Arch-Silence.
 #
 # Copyright (C) 2015 Filippo Ghibellini
-# Modified by Matteo Salonia (2021)
+# Modified by Matteo Salonia (2021-2024)
 
-#general settings
+# General settings
 title-text: ""
 desktop-color: "#333"
 
-terminal-font: "Dejavu Sans Mono 12"
+# This size is the maximum, with this font, for a 2560x1440 display
+# Change size to 12 for a smaller display.
+terminal-font: "Terminus 32"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
 terminal-height: "100%"
 terminal-border: "0"
 
-#progress bar
+# Progress bar
 + progress_bar {
 	id = "__timeout__"
 	left = 0
@@ -25,28 +27,31 @@ terminal-border: "0"
 	show_text = false
 
 	# just two vertical pixels of color #1793d1
-    bar_style = "progress_bar/progress_bar_*.png"
-    highlight_style = "progress_bar/progress_bar_hl_*.png"
+	bar_style = "progress_bar/progress_bar_*.png"
+	highlight_style = "progress_bar/progress_bar_hl_*.png"
 }
 
 # Gentoo logo
 + image {
 	top = 50%-300
 	left = 50%-90
-    file = "gentoo_logo.png"
+	file = "gentoo_logo.png"
 }
 
-#boot menu
+# Boot menu
 + boot_menu {
-	left = 50%-200
-	#left = 50%-300
-	width = 550
+	#left = 50%-200
+	left = 50%-300
+	#width = 550
+	width = 750
 	top = 50%
-	height = 300
+	#height = 300
+	height = 500
 
-	item_font = "DejaVu Sans Bold 14"
+	# See above if you want to change the size.
+	item_font = "Terminus 32"
 	item_color = "#999"
-	selected_item_font = "DejaVu Sans Bold 14"
+	selected_item_font = "Terminus 32"
 	selected_item_color= "#fff"
 
 	item_height = 26
@@ -56,10 +61,9 @@ terminal-border: "0"
 	scrollbar = false
 }
 
-#help bar at the bottom
+# Help bar at the bottom
 + image {
-	top = 100%-56
-	left = 50%-175
-    file = "help_bar.png"
+	top = 100%-80
+	left = 50%-375
+	file = "help_bar.png"
 }
-
