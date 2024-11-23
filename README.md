@@ -3,6 +3,8 @@
 This theme was forked from Arch-Silence.
 Originally made by Filippo Ghibellini, modified by Matteo Salonia.
 
+![Preview](Preview.png)
+
 ## Font
 The font used is Terminus.
 
